@@ -3,11 +3,11 @@
 namespace Peridot\Leo\Matcher;
 
 /**
- * A Match is the result of MatcherInterface::match($actual).
+ * A MatchResult is the result of MatcherInterface::match($actual).
  *
  * @package Peridot\Leo\Matcher
  */
-class Match
+class MatchResult
 {
     /**
      * @var bool

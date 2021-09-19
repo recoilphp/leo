@@ -21,7 +21,7 @@ class TypeMatcher extends AbstractMatcher
      * {@inheritdoc}
      *
      * @param $actual
-     * @return Match
+     * @return MatchResult
      */
     public function match($actual = '')
     {
