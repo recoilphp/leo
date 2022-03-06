@@ -93,10 +93,10 @@ final class AssertionException extends Exception
     {
         $fileProperty = $reflector->getProperty('file');
         $fileProperty->setAccessible(true);
-        $fileProperty->setValue($exception, $file);
+        $fileProperty->setValue($exception, $file ?? '');
 
         $lineProperty = $reflector->getProperty('line');
         $lineProperty->setAccessible(true);
-        $lineProperty->setValue($exception, $line);
+        $lineProperty->setValue($exception, $line ?? 0);
     }
 }
